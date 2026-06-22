@@ -1,0 +1,11 @@
+/* ./src/main/resources/static/css*/
+
+@import "tailwindcss";
+@import "flowbite";
+
+
+/* Tell Tailwind WHERE to scan */
+@source "../../templates";
+
+@custom-variant dark (&:is(.dark *));
+
