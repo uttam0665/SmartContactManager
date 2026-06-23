@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is about page</h1>
+    <hr />
+    
+    <!-- <div class="host-tag" th:insert="~{base :: value(10,20)}"></div> -->
+
+    <!-- we can give dynamic value using TAG,ID,CLASS  in fragment -->
+
+     <!-- <div class="host-tag" th:replace="~{base :: parent(~{:: .sec_fragment})}">
+        <section>
+            <h2>Dynamic content</h2>
+            <h3>Hii !!! </h3>
+            <h4>how are you</h4>
+        </section>
+
+         <section id="first_fragment">
+            <h2>Dynamic content</h2>
+            <h3>Using Id</h3>
+        </section>
+
+        <section class="sec_fragment">
+            <h2>Dynamic content</h2>
+            <h3>Using Class</h3>
+        </section>
+     </div>
+</body>
+</html> --> 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" data-th-replace="~{base :: parent(~{:: #content}, ~{:: title} , ~{:: script})}">
+<head>
+    <title>about page</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to About Page</h1>
+    </div>
+    <script>
+        console.log("about page")
+    </script>
+    <script>
+        console.log("second about page")
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
