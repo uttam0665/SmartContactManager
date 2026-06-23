@@ -3,6 +3,8 @@ target/
 node_modules/
 .metadata/
 .mvn/wrapper/maven-wrapper.jar
+src/main/resources/static/css/output.css
+src/main/resources/application.properties
 !**/src/main/**/target/
 !**/src/test/**/target/
 
